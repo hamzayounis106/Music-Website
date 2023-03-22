@@ -15,7 +15,7 @@ songnameDisplay.innerText = "";
 // Array of Songs
 
 let songs = [
-    { songname: "Main Royaaa ", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song1.mp3", songCover: "Music Covers/cover1.jpg" },
+    { songname: "Main Royaaa ", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song1.mp3?raw=true", songCover: "Music Covers/cover1.jpg" },
     { songname: "Ertugrul Music", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song2.mp3", songCover: "Music Covers/cover2.jpg" },
     { songname: "O Re Piya", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song3.mp3", songCover: "Music Covers/cover3.jpg" },
     { songname: "Anuv Jain  GUL Studio", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song4.mp3", songCover: "Music Covers/cover4.jpg" },

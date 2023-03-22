@@ -1,4 +1,4 @@
-console.log("Hello world");
+console.log("Made By Hamza Younis 1248");
 // Intializing Variables
 let myProgressBar = document.getElementById("myProgressBar");
 let masterPlay = document.getElementById("masterPlay");

@@ -24,7 +24,6 @@ let songs = [
     { songname: "Ye jism hai toh kya", songPath: "Musics/Song7.mp3", songCover: "Music Covers/cover7.jpg" }
 ]
 songItems.forEach((element, i) => {
-    console.log(element, i);
     element.getElementsByTagName("img")[0].src = songs[i].songCover;
     element.getElementsByClassName("song-name")[0].innerText = songs[i].songname;
 });

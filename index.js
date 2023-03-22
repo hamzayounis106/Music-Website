@@ -1,4 +1,4 @@
-console.log("Made By Hamza Younis 1248");
+console.log("Hello world");
 // Intializing Variables
 let myProgressBar = document.getElementById("myProgressBar");
 let masterPlay = document.getElementById("masterPlay");
@@ -15,13 +15,13 @@ songnameDisplay.innerText = "";
 // Array of Songs
 
 let songs = [
-    { songname: "Main Royaaa ", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song1.mp3?raw=true", songCover: "Music Covers/cover1.jpg" },
-    { songname: "Ertugrul Music", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song2.mp3", songCover: "Music Covers/cover2.jpg" },
-    { songname: "O Re Piya", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song3.mp3", songCover: "Music Covers/cover3.jpg" },
-    { songname: "Anuv Jain  GUL Studio", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song4.mp3", songCover: "Music Covers/cover4.jpg" },
-    { songname: "Tujhe Bhula Mashup", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song5.mp3", songCover: "Music Covers/cover5.jpg" },
-    { songname: "Waqt Ki Baatein", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song6.mp3", songCover: "Music Covers/cover6.jpg" },
-    { songname: "Ye jism hai toh kya", songPath: "https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song7.mp3", songCover: "Music Covers/cover7.jpg" }
+    { songname: "Main Royaaa ", songPath: "Musics/Song1.mp3", songCover: "Music Covers/cover1.jpg" },
+    { songname: "Ertugrul Music", songPath: "Musics/Song2.mp3", songCover: "Music Covers/cover2.jpg" },
+    { songname: "O Re Piya", songPath: "Musics/Song3.mp3", songCover: "Music Covers/cover3.jpg" },
+    { songname: "Anuv Jain  GUL Studio", songPath: "Musics/Song4.mp3", songCover: "Music Covers/cover4.jpg" },
+    { songname: "Tujhe Bhula Mashup", songPath: "Musics/Song5.mp3", songCover: "Music Covers/cover5.jpg" },
+    { songname: "Waqt Ki Baatein", songPath: "Musics/Song6.mp3", songCover: "Music Covers/cover6.jpg" },
+    { songname: "Ye jism hai toh kya", songPath: "Musics/Song7.mp3", songCover: "Music Covers/cover7.jpg" }
 ]
 songItems.forEach((element, i) => {
     console.log(element, i);
@@ -80,7 +80,7 @@ Array.from(document.getElementsByClassName("songPlay")).forEach((element) => {
             e.target.classList.add('fa-pause')
             masterPlay.classList.remove("fa-play")
             masterPlay.classList.add("fa-pause")
-            audioElement.src = `https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song${indexnumber}.mp3`;
+            audioElement.src = `Musics/Song${indexnumber}.mp3`;
             audioElement.play();
             gif.style.opacity = "1";
 
@@ -110,7 +110,7 @@ next.addEventListener('click', () => {
     masterPlay.classList.remove("fa-play")
     masterPlay.classList.add("fa-pause")
     audioElement.currentTime = 0;
-    audioElement.src = `https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song${indexnumber}.mp3`;
+    audioElement.src = `Musics/Song${indexnumber}.mp3`;
     audioElement.play();
     gif.style.opacity = "1";
     Array.from(document.getElementsByClassName("songPlay")).forEach((element) => {
@@ -134,7 +134,7 @@ previous.addEventListener('click', () => {
     masterPlay.classList.remove("fa-play")
     masterPlay.classList.add("fa-pause")
     audioElement.currentTime = 0;
-    audioElement.src = `https://github.com/Dumbass-Coder/Music-Website/blob/main/Musics/song${indexnumber}.mp3`;
+    audioElement.src = `Musics/Song${indexnumber}.mp3`;
     audioElement.play();
     gif.style.opacity = "1";
     songnameDisplay.innerText = songs[indexnumber - 1].songname;
